@@ -455,3 +455,14 @@ cd ~/.config
 git init
 git remote add origin git@github.com:JoePollo/config.git
 git branch -M main
+git ac "config shit"
+git push
+git push --set-upstream origin main
+ls helix/
+cd helix/
+git remove
+ls -la
+rm .git
+rm -r .git
+ls
+cd ..
