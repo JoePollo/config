@@ -1,0 +1,23 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-371G22.desktop
+x-scheme-handler/https=userapp-Firefox-371G22.desktop
+x-scheme-handler/chrome=userapp-Firefox-371G22.desktop
+text/html=userapp-Firefox-371G22.desktop
+application/x-extension-htm=userapp-Firefox-371G22.desktop
+application/x-extension-html=userapp-Firefox-371G22.desktop
+application/x-extension-shtml=userapp-Firefox-371G22.desktop
+application/xhtml+xml=userapp-Firefox-371G22.desktop
+application/x-extension-xhtml=userapp-Firefox-371G22.desktop
+application/x-extension-xht=userapp-Firefox-371G22.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Zen-PIJ512.desktop;zen-browser.desktop;firefox.desktop;userapp-Firefox-371G22.desktop;
+x-scheme-handler/https=userapp-Zen-PIJ512.desktop;zen-browser.desktop;firefox.desktop;userapp-Firefox-371G22.desktop;
+x-scheme-handler/chrome=userapp-Zen-PIJ512.desktop;zen-browser.desktop;userapp-Firefox-371G22.desktop;
+text/html=userapp-Zen-PIJ512.desktop;zen-browser.desktop;firefox.desktop;userapp-Firefox-371G22.desktop;
+application/x-extension-htm=userapp-Zen-PIJ512.desktop;zen-browser.desktop;userapp-Firefox-371G22.desktop;
+application/x-extension-html=userapp-Zen-PIJ512.desktop;zen-browser.desktop;userapp-Firefox-371G22.desktop;
+application/x-extension-shtml=userapp-Zen-PIJ512.desktop;zen-browser.desktop;userapp-Firefox-371G22.desktop;
+application/xhtml+xml=userapp-Zen-PIJ512.desktop;zen-browser.desktop;firefox.desktop;userapp-Firefox-371G22.desktop;
+application/x-extension-xhtml=userapp-Zen-PIJ512.desktop;zen-browser.desktop;userapp-Firefox-371G22.desktop;
+application/x-extension-xht=userapp-Zen-PIJ512.desktop;zen-browser.desktop;userapp-Firefox-371G22.desktop;

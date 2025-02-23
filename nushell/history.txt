@@ -1,0 +1,457 @@
+exit
+$env | reject config | transpose key val | each {|r| echo $"$env.($r.key) = '($r.val)'"} | str join (char nl)
+exit
+uhoh
+sudo killall -1 gnome-shell
+exit
+sdfolsdm
+sudo systemctl restart gdm3
+ls ~/downlaods
+ls ~/downloads
+ls ~
+ls ~/Downloads/
+/home/yoyomusho/Downloads/zen-x86_64.AppImage
+/home/yoyomusho/Downloads/JetBrainsMonoNLNerdFontMono-Medium.ttf 
+open ~/Downloads/
+open /home/yoyomusho/Downloads/JetBrainsMonoNLNerdFontMono-Medium.ttf 
+ls ~/Downloads/
+tar xf zen-browser.tar.xz
+tar xf ~/Downloads/zen.linux-x86_64.tar.xz
+ls ~/Downloads/
+ls
+sudo mv zen-browser /opt/
+sudo mv zen /opt/
+sudo nano /usr/share/applications/zen-browser.desktop
+ls /opt/zen
+ls /opt/zen/browser/
+sudo nano /usr/share/applications/zen-browser.desktop
+sudo chmod +x /usr/share/applications/zen-browser.desktop
+curl -sS https://starship.rs/install.sh | sh
+brew install helix
+hx
+flatpak install flathub com.helix_editor.Helix
+flatpak run com.helix_editor.Helix
+helix
+hx
+exit
+config nu
+nano config nu
+$nu.config-path
+nano $nu.config-path
+reload
+brew doctor
+brew install heli
+brew install helix
+hx
+config nu
+$env.config.buffer_editor = "hx"
+config nu
+curl -sS https://starship.rs/install.sh | sh
+config nu
+~/helix
+ls ~/.config
+ls ~/.config/helix/
+hx ~/.config/helix/config.toml
+hx ~/.config/helix/languages.toml
+git --version
+git config --global user.name "yoyomusho"
+git config --global user.email "jepiii@outlook.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "jepiii@outlook.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+mkdir git
+cd git/
+git clone git@github.com:JoePollo/az_iac.git
+ls
+config nu
+hx ~/.config/helix/config.toml
+config nu
+hx ~/.config/helix/config.toml
+config nu
+sudo config nu
+sudo hx ~/.config/helix/languages.toml
+hx --health clipboard
+sudo apt install xclip
+hx --health clipboard
+hx ~/.config/helix/config.toml
+config nu
+source ~/.config/nushell/config.nu
+$nu.config-path
+config nu
+starship preset gruvbox-rainbow -o ~/.config/starship.toml
+cd git/
+cd ~/Downloads/
+exit nu
+config nu
+go
+go version
+cd ~
+ls Downloads/
+rm -r ~/Downloads/*
+ls Downloads/
+apt-get
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+az
+ps aux | grep packagekit<\n>
+ps aux | grep packagekit
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash<\n>
+az
+az login
+az login --use-device-code
+cd git/
+hx az_iac/
+go get gopls
+go install gopls
+go install gopls@latest
+go install golang.org/x/tools/gopls@latest
+hx ~/.config/helix/languages.toml
+hx ~/.config/helix/config.toml
+hx az_iac/
+gopls
+hx az_iac/
+go gopls
+go
+hx ~/.config/helix/languages.toml
+go install -v golang.org/x/tools/gopls@latest
+$env.GOPATH
+brew install gopls
+gopls
+hx az_iac/
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install --locked zellij<\n>
+cargo install --locked zellij
+. "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
+rust
+cargo
+cargo --version
+ls ~
+ls -la ~
+ls -la ~/.rustup
+ls -la ~/.rustup/toolchains/
+zen
+nu config
+config nu
+zen
+cd git/
+hx az_iac/
+~/Downloads/
+ls
+tar -xzf zellij-x86_64-unknown-linux-musl.tar.gz
+ls
+mv zellij /opt/
+ls /opt/
+sudo mv zellij /opt/
+ls /opt/
+zellij
+config nu
+zellij
+config nu
+$env.path
+zellij
+$env.path
+ls /.cargo
+ls -la ~/.cargo
+config nu
+zellij
+pkill zellij
+zellij
+zellij kill-session
+zellij session
+zellij ls
+zellij kill-session .
+zellij kill-all-sessions
+zellij
+zellij config
+zellij --clean
+zellij --check
+zellij --version
+ls ~/opt
+ls /opt/
+ls ~/.config/zellij
+ux ~/.config/zellij/config.kdl
+zellij
+ux ~/.config/zellij/config.kdl
+zellij
+hx ~/.config/zellij/config.kdl
+sudo apt update
+sudo apt install file
+file --version
+brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick font-symbols-only-nerd-font
+brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide imagemagick
+cd ~/git
+hx az_iac/
+zellij
+hx az_iac/
+brew install pulumi/tap/pulumi
+pulumi version
+hx az_iac/
+hx ~/.config/helix/languages.toml
+go install golang.org/x/tools/cmd/goimports@latest
+goimports
+hx ~/.config/helix/languages.toml
+hx ~/.config/helix/languages.toml
+ls ~/go/bin/goimports
+gp
+hx ~/.config/helix/languages.toml
+cd az_iac/eventgrid-exercise/
+go mod tidy
+hx az_iac/
+ls ~/.config/zen
+config nu
+ls /opt/zen/browser/
+ls /opt/zen/
+ls /usr/share/applications/zen-browser.desktop
+ux /usr/share/applications/zen-browser.desktop
+hx /usr/share/applications/zen-browser.desktop
+hx
+hx ~/.config/helix/languages.toml
+hx ~/.config/helix/config.toml
+hx
+hx ~/.config/helix/languages.toml
+hx --health go
+hx ~/.config/helix/languages.toml
+hx ~/.config/helix/config.toml
+hx az_iac/
+hx ~/.config/helix/config.toml
+hx ~/.config/helix/languages.toml
+hx az_iac/
+zellij
+hx az_iac/
+hx ~/.config/helix/languages.toml
+hx az_iac/
+hx --health go
+hx az_iac/
+hx ~/.config/helix/languages.toml
+hx az_iac/
+hx --health go
+gofmt
+hx --health go
+curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.64.5
+go env GOPATH
+hx --health go
+go env GOPATH
+ls ~/go/bin
+config nu
+hx --health go
+golangci-lint-langserver
+ls ~/go/bin/golangci-lint
+. ~/go/bin/golangci-lint
+hx --health go
+ls ~/go/bin/
+config nu
+hx --health go
+hx ~/.config/helix/languages.toml
+hx --health go
+golangci-lint-langserver
+go install github.com/nametake/golangci-lint-langserver@latest
+ls ~/go/bin/
+golangci-lint-langserver
+hx ~/.config/helix/languages.toml
+config nu
+hx --health go
+$env.path
+golangci-lint
+config nu
+golangci-lint
+hx --health go
+hx az_iac/
+cd az_iac/
+git ac "stuff and stuff"
+git config --global alias.ac '!git add . && git commit -m'<\n>
+git ac "stuff and stuff"
+git push
+cd ~/.config/helix/
+ls
+git init
+git remote set origin git@github.com:JoePollo/helix-config.git
+git remote origin git@github.com:JoePollo/helix-config.git
+git remote add origin git@github.com:JoePollo/helix-config.git
+git -M main
+git branch -M main
+git ac "stuff and stuff"
+git push
+git config --global push.autoSetupRemote true<\n>
+git push
+git push --set-upstream origin main
+git push --set-upstream origin main -f
+cd ~/Downloads/
+ls
+tar -xzf i3-4.24.tar.xz
+tar -xz i3-4.24.tar.xz
+tar 
+tar --help
+tar -xf i3-4.24.tar.xz
+ls
+ls i3-4.24/
+mv ./i3-4.24 /opt/
+sudo mv ./i3-4.24 /opt/
+cd ~/.config/helix
+hx readme.md
+ls ~/.bun
+config nu
+bun
+bun add --dev --exact prettier
+prettier
+bun prettier
+ls
+sudo mv node_modules ~
+ls ~/node_modules/
+bun prettier
+ls
+hx languages.toml
+rm bun.lock
+hx readme.md
+hx languages.toml
+hx readme.md
+hx languages.toml
+bun prettier --parser markdown
+bun add -d prettier
+ls
+rm -r node_modules/
+rm bun.lock
+bun prettier
+prettier
+ls /opt/
+ls ~
+ls ~/node_modules/
+ls ~/node_modules/prettier/
+ls ~/node_modules/prettier/bin
+bun prettier --parser markdown ./readme.md
+brew install marksman
+marksman
+hx languages.toml
+hx readme
+hx --health markdown
+brew install dprint
+hx languages.toml
+cd ~/git
+dprint init
+hx dprint.json
+hx readme.md
+cd ~/.config/helix
+hx readme.md
+hx --health markdown
+ls ~/git
+hx --health markdown
+hx readme.md
+git ac "stuff"
+git push
+ls /opt/
+firefox
+sudo apt install i3
+sudo hx /usr/share/xsessions/i3.desktop
+hx /usr/share/xsessions/i3.desktop
+sudo helix /usr/share/xsessions/i3.desktop
+sudo nano /usr/share/xsessions/i3.desktop
+sudo chmod +x /usr/share/xsessions/i3.desktop<\n>
+sudo rm /usr/share/xsessions/i3.desktop
+ls /usr/share/xsessions
+cat /usr/share/xsession/pop.desktop
+cat /usr/share/xsessions/pop.desktop
+ls /opt/i3-4.24/
+rm -r /opt/i3-4.24/
+sudo rm -r /opt/i3-4.24/
+sudo apt install i3
+bluetooth
+settings
+service bluetooth start
+bluetoothctl
+ls /etc/pulse/
+ls /etc/bluetooth/
+ls /etc/bluetooth/main.conf
+hx /etc/bluetooth/main.conf
+ls ~/.config/helix/
+hx
+cd ~/.config/helix
+hx readme.md
+sudo apt install dmenu
+hx readme.md
+xrandr
+xrandr --output HDMI-1 --primary
+i3-msg move workspace to put HDMI-1
+i3-msg move workspace to output HDMI-1
+i3-msg move workspace to output "HDMI-1"
+i3-msg -t get_outputs<\n>
+i3-msg 'move workspace to output HDMI-1'<\n>
+i3-msg "workspace 1; move workspace to output HDMI-1"<\n>
+ls ~/.config/i3/
+hx ~/.config/i3/config
+fc-list
+fc-list | grep jetbrain
+fc-list | grep nerd
+hx ~/.config/helix/readme.md
+sudo apt install libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev meson ninja-build uthash-dev
+sudo apt install picom
+which picom
+ls ~/bin/picom
+ls /usr/bin/picom
+ls /usr/bin/
+picom
+sudo apt install polybar
+hx ~/.config/helix/readme.md
+polybar
+ls /usr/bin/polybar
+hx ~/.config/polybar/config.ini
+ls /usr/bin/polybar
+which polybar
+ls -la ~/.config
+polybar mybar
+where polybar
+which polybar
+rm -r /usr/bin/polybar
+sudo rm -r /usr/bin/polybar
+ls /usr/bin/polybar
+ls /usr/bin/
+test
+ls
+config nu
+sudo apt install polybar
+polybar
+sudo apt uninstall polybar
+sudo apt remove --purge polybar
+sudo apt install polybar
+hx /etc/polybar/config.ini
+sudo hx
+sudoedit /etc/polybar/config.ini
+touch /etc/polybar/config.ini
+sudo touch /etc/polybar/config.ini
+mkdir /etc/polybar/
+sudo mkdir /etc/polybar/
+sudoedit /etc/polybar/config.ini
+sudoedit helix /etc/polybar/config.ini
+sudo nano /etc/polybar/config.ini
+polybar
+polybar example
+polybar example --config=/etc/polybar/config.ini
+cd ~/git
+git clone git@github.com:adi1090x/polybar-themes.git
+cd polybar-themes/
+chmod +x setup.sh
+./setup.sh
+ls ~/.config/polybar/launch.sh
+./setup.sh
+~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh --shapes
+sudo ~/.config/polybar/launch.sh --shapes
+ls ~/.config/polybar/
+ls ~/.config/polybar/shapes/
+ls /etc/polybar/
+hx /etc/polybar/config.ini
+nano /etc/polybar/config.ini
+cd ~/.config/polybar/
+ls
+mkdir toph
+cd toph/
+hx config.ini
+cp config.ini /etc/polybar/
+sudo rm /etc/polybar/config.ini
+sudo cp config.ini /etc/polybar/
+polybar toph
+polybar --config=/etc/polybar/config.ini toph
+cd ~/.config
+git init
+git remote add origin git@github.com:JoePollo/config.git
+git branch -M main
