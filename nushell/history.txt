@@ -466,3 +466,6 @@ rm .git
 rm -r .git
 ls
 cd ..
+git ac "stuff"
+git push
+git rm -r --cached helix
