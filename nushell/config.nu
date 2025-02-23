@@ -100,3 +100,6 @@ let config = {
   max_history_size: 10000
   log_level: error
 }
+
+alias whatsapp = flatpak run io.github.mimbrero.WhatsAppDesktop
+

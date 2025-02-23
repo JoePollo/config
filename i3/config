@@ -25,7 +25,10 @@ exec --no-startup-id picom
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id polybar --config=/etc/polybar/config.ini toph
+exec --no-startup-id blueman-applet
 bindsym $mod+space exec rofi -show combi
+bindsym Print exec --no-startup-id flameshot gui --clipboard
+
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.

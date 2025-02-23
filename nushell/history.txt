@@ -522,3 +522,48 @@ hx readme.md
 hx ./rofi/config.rasi
 hx ~/.config/i3/config
 hx readme.md
+git ac "holy shit"
+git push
+sudo apt install snapd
+sudo systemctl enable --now snapd.socket<\n>
+sudo snap install whatsapp-for-linux<\n>
+snap
+snap install whatsapp-for-linux
+sudo snap install whatsapp-for-linux
+sudo apt install flatpak<\n>
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo<\n>
+flatpak install flathub io.github.mimbrero.WhatsAppDesktop<\n>
+firefox
+brew install --cask whatsapp
+flatpak install flathub io.github.mimbrero.WhatsAppDesktop<\n>
+flatpak run io.github.mimbrero.WhatsAppDesktop<\n>
+config nu
+whatsapp
+ls /etc/pulse/
+ls /etc/pulse/client.conf.d/
+ls ~/.config/pulse/cookie
+sudo nano /etc/pulse/default.pa
+hx ~/.config/i3/config
+whatsapp
+ls ~/Pictures/
+sudo snap install spectacle
+hx ~/.config/i3/config
+apt install flameshot
+sudo apt install flameshot
+flameshot
+flameshot gui
+flameshot gui --clipboard
+whatsapp
+hx ~/.config/i3/config
+whatsapp 
+hx /etc/pulse/default.pa
+cd ~/.config
+whats
+whatsapp 
+hx ~/.config/i3/config
+bluetoothctl
+sudo apt install blueman<\n>
+blueman
+blueman-manager
+hx ~/.config/i3/config
+cd ~/.config

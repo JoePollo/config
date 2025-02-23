@@ -31,6 +31,8 @@ The intent of this repository is to track the status of Helix configuration, as 
 - Rofi - better windows manager
   - Add following to i3 config:\
     `bindsym $mod+space exec rofi -show combi`
+  - flameshot for screenshots
+    - add to i3 config: `bindsym Print exec --no-startup-id flameshot gui --clipboard`
 
 #### Setup
 
