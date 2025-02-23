@@ -469,3 +469,22 @@ cd ..
 git ac "stuff"
 git push
 git rm -r --cached helix
+git ac "test"
+git push
+ls
+hx ~/.config/polybar/config.ini
+ls
+fc-list | grep JetBrain
+nano /etc/polybar/config.ini
+sudo nano /etc/polybar/config.ini
+ls /usr/share/backgrounds/pop/
+sudo apt install feh<\n>
+feh --bg-scale /usr/share/backgrounds/pop/ahmadreza-sajadi-10140-edit.jpg
+feh --bg-scale /usr/share/backgrounds/pop/benjamin-voros-250200.jpg
+feh --bg-scale /usr/share/backgrounds/pop/ferdinand-stohr-149422.jpg
+feh --bg-scale /usr/share/backgrounds/pop/galen-crout-175291.jpg
+feh --bg-scale /usr/share/backgrounds/pop/jad-limcaco-183877.jpg
+feh --bg-scale /usr/share/backgrounds/pop/jake-hills-36605.jpg
+feh --bg-scale /usr/share/backgrounds/pop/nick-nazzaro-bedroom.png
+feh --bg-scale /usr/share/backgrounds/pop/nick-nazzaro-desert.png
+cd ~/.config

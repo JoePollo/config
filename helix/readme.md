@@ -23,6 +23,11 @@ The intent of this repository is to track the status of Helix configuration, as 
 
 - Picom - smooth graphics
 - Polybar - skin for status bar
+  - Polybar config.ini goes under /etc/polybar/config.ini
+    - Copies are saved under ~/.config/polybar/
+  - Add `exec_always killall polybar`
+  - Add `exec_always --no-startup-id polybar` to `~/.config/i3/config`
+- Feh to add background images
 
 #### Setup
 
