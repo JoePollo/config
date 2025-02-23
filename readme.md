@@ -28,6 +28,9 @@ The intent of this repository is to track the status of Helix configuration, as 
   - Add `exec_always killall polybar`
   - Add `exec_always --no-startup-id polybar` to `~/.config/i3/config`
 - Feh to add background images
+- Rofi - better windows manager
+  - Add following to i3 config:\
+    `bindsym $mod+space exec rofi -show combi`
 
 #### Setup
 

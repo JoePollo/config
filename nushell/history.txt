@@ -488,3 +488,37 @@ feh --bg-scale /usr/share/backgrounds/pop/jake-hills-36605.jpg
 feh --bg-scale /usr/share/backgrounds/pop/nick-nazzaro-bedroom.png
 feh --bg-scale /usr/share/backgrounds/pop/nick-nazzaro-desert.png
 cd ~/.config
+git ac "stuff"
+git push
+ls latr
+ls -latr
+ls -la
+sudo apt install rofi<\n>
+rofi
+rofi -show
+mkdir -p ~/.config/rofi
+mkdir rofi
+rofi -dump-config > ~/.config/rofi/config.rasi
+ls rofi/
+rofi -dump-config | ~/.config/rofi/config.rasi
+cd rofi/
+touch config.rasi
+rofi -dump-config | ~/.config/rofi/config.rasi
+ls
+open config.rasi
+ls
+hx config.rasi
+hx catppuccin-mocha.rasi
+hx config.rasi
+rofi -show
+hx ~/.config/i3/config
+cd ..
+cd helix/
+ls
+mv readme.md ..
+cd ..
+ls 
+hx readme.md
+hx ./rofi/config.rasi
+hx ~/.config/i3/config
+hx readme.md
