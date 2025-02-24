@@ -567,3 +567,89 @@ blueman
 blueman-manager
 hx ~/.config/i3/config
 cd ~/.config
+git ac "everything"
+git push
+hx readme.md
+sleep
+systemctl suspend
+config nu
+whatsapp
+az
+az login --use-device-code
+cd git/az_iac/eventgrid-exercise/
+pulumi up
+pulumi login --local
+pulumi logout
+ls
+pulumi login
+pulumi login --local
+pulumi up
+pulumi login .
+pulumi logout
+pulumi login .
+pulumi login file://./pulumi.yaml
+pulumi login file://./Pulumi.yaml
+pulumi login file://.
+ls
+ls -la
+ls .pulumi
+pulumi up
+mv Pulumi.dev.yaml .pulumi
+mv Pulumi.yaml .pulumi
+pulumi up
+mv .pulumi/Pulumi.yaml .
+pulumi up
+ls .pulumi
+pulumi up
+go mod tidy
+pulumi up
+hx git/az_iac/
+pulumi up
+cd ~/.config/
+hx readme.md
+cd ~/git/az_iac/eventgrid-exercise/
+ls
+whatsapp
+pulumi up
+hx git/az_iac/
+pulumi up
+cd git/az_iac/
+git ac "stuff"
+git push
+pulumi down
+cd eventgrid-exercise/
+open clipboard | save screenshot_$(date now | strftime "%Y-%m-%d_%H-%M-%S").png<\n>
+cargo install nu_plugin_clipboard<\n>
+plugin add ~/.cargo/bin/nu_plugin_clipboard<\n>
+config nu
+si
+cd git/az_iac/
+si
+config nu
+$env.config.buffer_editor = "hx"
+config nu
+~/.config/nushell/config.nu
+hx ~/.config/nushell/config.nu
+si
+config nu
+cd ..
+mkdir message-based-solutions
+cd message-based-solutions/
+pulumi init
+pulumi new
+hx
+hx ~/.config/helix/config.toml
+hx
+$path.env
+$env
+config nu
+hx ~/.config/helix/config.toml
+cd git/az_iac/message-based-solutions/
+pulumi up
+git ac "stuff"
+git push
+hx
+config nu
+pulumi down
+sleep
+cd ~/.config

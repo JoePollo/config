@@ -68,6 +68,7 @@ ins = "insert_mode"
 esc = ["collapse_selection", "keep_primary_selection"]
 C-o = ":open ~/.config/helix/config.toml" # Maps Ctrl-o to opening of the helix config file
 C-r = ":config-reload"
+"." = "insert_newline"
 # C-tab = ":buffer-previous"
 # C-S-tab = ":buffer-next"
 # A-w = ":buffer-close"
@@ -88,7 +89,7 @@ tab = "goto_next_function" # Select and jump to the next function via Treesitter
 
 
 # Use system clipboard
-p = "paste_clipboard_before"
+p = ":clipboard-paste-replace"
 y = "yank_main_selection_to_clipboard"
 
  # https://github.com/helix-editor/helix/discussions/7908

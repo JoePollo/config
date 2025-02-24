@@ -28,9 +28,12 @@ $env.PATH = ($env.PATH | prepend [
   "~/.bun/bin"
 ])
 $env.config.buffer_editor = "hx"
+$env.ENV = "dev"
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 alias zen = /opt/zen/zen
+alias sleep = systemctl suspend
+
 
 let base00 = "#1c1c1c"
 let base01 = "#262626"

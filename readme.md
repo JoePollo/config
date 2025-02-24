@@ -33,6 +33,14 @@ The intent of this repository is to track the status of Helix configuration, as 
     `bindsym $mod+space exec rofi -show combi`
   - flameshot for screenshots
     - add to i3 config: `bindsym Print exec --no-startup-id flameshot gui --clipboard`
+  - blueman for bluetooth management
+
+### Helix Notes
+
+#### Hotkeys
+
+- ALT + o to expand select
+- ALT + i to reduce select
 
 #### Setup
 
