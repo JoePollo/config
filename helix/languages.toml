@@ -13,6 +13,12 @@ command = "golangci-lint-langserver"
 command = ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1"]
 
 [[language]]
+name = "json"
+auto-format = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "json", "-c", "~/git/dprint.json"]}
+file-types = ["json"]
+
+[[language]]
 name = "markdown"
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md", "-c", "~/git/dprint.json"]}
@@ -21,8 +27,8 @@ file-types = ["md"]
 [[language]]
 name = "python"
 auto-format = true
-diagnostic-severity="warning"
-language-servers = ["pyright"]
+# diagnostic-severity="warning"
+language-servers = ["pyright","ruff"]
 indent = { tab-width = 4, unit = "    " }
 
 [language.formatter]
@@ -43,3 +49,15 @@ reportMissingTypeStubs = false
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "basic"
 autoImportCompletions = true
+reportUnusedVariable = true
+
+[language-server.bun]
+command = "bun"
+args = ["bun", "lsp"]
+
+[[language]]
+name = "typescript"
+language-servers = ["bun"]
+auto-format = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "ts", "-c", "~git/dprint.json"]}
+file-types = ["tsx", "ts"]
