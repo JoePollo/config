@@ -1074,3 +1074,7 @@ bash -c "/home/yoyomusho/apps/Obsidian-1.8.9.AppImage &"
 blueman
 cd ~/.config/
 git pull
+git ac "linux changes"
+git pull
+git config pull.rebase true
+git pull
