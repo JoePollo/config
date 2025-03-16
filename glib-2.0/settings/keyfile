@@ -1,0 +1,5 @@
+[org/blueman/general]
+window-properties=[1716, 1380, 3642, 30]
+
+[org/blueman/plugins/powermanager]
+auto-power-on=true

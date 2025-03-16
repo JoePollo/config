@@ -1,40 +1,7 @@
 # config.nu
-#
-# Installed by:
 # version = "0.102.0"
-#
-# This file is used to override default Nushell settings, define
-# (or import) custom commands, or run any other startup tasks.
-# See https://www.nushell.sh/book/configuration.html
-#
-# This file is loaded after env.nu and before login.nu
-#
-# You can open this file in your default editor using:
-# config nu
-#
-# See `help config nu` for more options
-#
-# You can remove these comments if you want or leave
-# them for future reference.
 
-$env.PATH = ($env.PATH | prepend [
-  "~/.linuxbrew/bin"
-  "/home/linuxbrew/.linuxbrew/bin"
-  "/home/linuxbrew/.linuxbrew/sbin"
-  "/usr/local/go/bin"
-  "~/go/bin"
-  "/opt/"
-  "~/.cargo/bin"
-  "~/.bun/bin"
-])
-$env.config.buffer_editor = "hx"
-$env.ENV = "dev"
-mkdir ($nu.data-dir | path join "vendor/autoload")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-alias zen = /opt/zen/zen
-alias sleep = systemctl suspend
-
-
+# Define color theme
 let base00 = "#1c1c1c"
 let base01 = "#262626"
 let base02 = "#3a3a3a"
@@ -88,21 +55,51 @@ let bearded_theme = {
     shape_custom: {attr: b}
 }
 
-let config = {
-  filesize_metric: true
-  table_mode: rounded
-  use_ls_colors: true
-  color_config: $bearded_theme
-  use_grid_icons: true
-  footer_mode: always
-  animate_prompt: false
-  float_precision: 2
-  use_ansi_coloring: true
-  filesize_format: "b"
-  edit_mode: emacs
-  max_history_size: 10000
-  log_level: error
+# Update PATH
+$env.PATH = ($env.PATH | prepend [
+  "~/.linuxbrew/bin"
+  "/home/linuxbrew/.linuxbrew/bin"
+  "/home/linuxbrew/.linuxbrew/sbin"
+  "/usr/local/go/bin"
+  "~/go/bin"
+  "/opt/"
+  "~/.cargo/bin"
+  "~/.bun/bin"
+  "/home/yoyomusho/.local/bin"
+])
+
+# Basic configuration
+$env.config = {
+  show_banner: false
+  render_right_prompt_on_last_line: true
+  buffer_editor: "hx"
 }
 
-alias whatsapp = flatpak run io.github.mimbrero.WhatsAppDesktop
+# Set up Starship prompt
+$env.PROMPT_COMMAND = { |span_duration| starship prompt --cmd-duration $span_duration }
 
+# Other environment variables
+$env.TERM = "wezterm"
+$env.ENV = "dev"
+
+# Create directory for autoload scripts
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+
+# Define aliases
+alias zen = /opt/zen/zen
+alias sleep = systemctl suspend
+alias monitors = ~/.screenlayout/monitors.sh
+alias python = python3
+alias volume = pavucontrol
+alias whatsapp = flatpak run io.github.mimbrero.WhatsAppDesktop
+alias o = bash -c "/home/yoyomusho/apps/Obsidian-1.8.9.AppImage &"
+alias blueman = bash -c "blueman-manager &"
+
+# Load Cargo environment
+source "~/.cargo/env.nu"
+
+# Configure appearance and behavior
+# These need to be set differently in Nushell 0.102.0
+# You may need to check the current documentation for the correct way to set these
+# or use the `config` command to modify them interactively

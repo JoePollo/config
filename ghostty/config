@@ -1,0 +1,41 @@
+# Font settings
+font-family = "FiraCodeNerdFont"
+font-size = 14.0
+font-feature = "liga"  # Enable ligatures
+
+# Font styles - corrected syntax
+font-family-bold = "FiraCodeNerdFont"
+font-style-bold = "Bold"
+font-family-italic = "FiraCodeNerdFont"
+font-style-italic = "Italic"
+font-family-bold-italic = "FiraCodeNerdFont"
+font-style-bold-italic = "Bold"  # Using Bold as fallback for bold italic
+
+# Window settings
+window-padding-x = 8
+window-padding-y = 8
+background-opacity = 0.95
+
+# Colors
+background = "#282c34"
+foreground = "#abb2bf"
+
+# Cursor settings
+cursor-style = "block"
+
+# Shell integration
+shell-integration-features = "no-cursor,sudo"
+
+keybind = ctrl+enter=new_split:auto
+keybind = ctrl+q=close_surface
+keybind = ctrl+r=reload_config
+keybind = ctrl+up=goto_split:up
+keybind = ctrl+down=goto_split:down
+keybind = ctrl+left=goto_split:left
+keybind = ctrl+right=goto_split:right
+keybind = ctrl+shift+up=resize_split:up,20
+keybind = ctrl+shift+down=resize_split:down,20
+keybind = ctrl+shift+left=resize_split:left,20
+keybind = ctrl+shift+right=resize_split:right,20
+
+theme = catppuccin-mocha
