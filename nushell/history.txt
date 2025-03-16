@@ -1078,3 +1078,5 @@ git ac "linux changes"
 git pull
 git config pull.rebase true
 git pull
+git ac "stuff?"
+git pull
