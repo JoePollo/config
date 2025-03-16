@@ -1080,3 +1080,7 @@ git config pull.rebase true
 git pull
 git ac "stuff?"
 git pull
+git ac "more stuff"
+git pull
+ls
+hx ~/.config/helix/config.toml
