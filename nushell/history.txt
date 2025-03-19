@@ -1084,3 +1084,165 @@ git ac "more stuff"
 git pull
 ls
 hx ~/.config/helix/config.toml
+git ac "everything"
+git push
+git push -f
+config nu
+hx
+hx ../TwoSum/
+cd ~/git/az_iac/
+mkdir ServiceBusQueueExercise
+cd ServiceBusQueueExercise/
+go mod init
+hx go.mod
+go mod init
+rm go.mod
+go mod init ServiceBusQueueExercise
+ls
+hx
+hx ~/.config/helix/config.toml
+hx main.go
+hx
+pulumi up
+pulumi new
+pulumi new --force
+ls
+open main.go
+ls
+go mod tidy
+pulumi up
+hx
+cd ../../
+ls
+mkdir AzureConsoleApp
+cd AzureConsoleApp/
+go mod init Az204ConsoleApp
+ls
+cd ..
+hx az_iac/
+cd AzureConsoleApp/
+go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get github.com/Azure/azure-sdk-for-go/sdk/messaging/azservicebus
+hx
+cd ../az_iac/
+hx
+hx
+hx ~/.config/helix/config.toml
+ls ..
+cd ../AzureConsoleApp/
+go run main.go
+cd ../az_iac/
+HX
+go run main.go
+cd ../az_iac/
+hx
+hx
+cd ServiceBusQueueExercise/
+go get github.com/pulumi/pulumi-azure-native/sdk/go/azure/core
+git init
+git branch -M main
+pulumi down
+git config --global init.defaultBranch main
+git remote add origin git@github.com:JoePollo/AzureConsoleApp.git
+git ac "junk and stuff"
+git push
+git push --set-upstream origin main
+hx
+hx
+sleep
+cd ../AzureConsoleApp/
+go run main.go
+blueman
+go run main.go
+cd ../az_iac/
+ls
+cd ServiceBusQueueExercise/
+ls
+pulumi up
+go get github.com/pulumi/pulumi-azure-native/sdk/go/azure/core
+go mod tidy
+hx go.mod
+hx
+gx
+hx
+pulumi up
+hx
+pulumi up
+hx
+go run main.go
+cd ../../AzureConsoleApp/
+go run main.go
+cd ../az_iac/ServiceBusQueueExercise/
+pulumi up
+pulumi down
+pulumi up
+hx
+cd ../../AzureConsoleApp/
+go run main.go
+cd ../az_iac/ServiceBusQueueExercise/
+pulumi down
+git ac "stuff"
+git push
+cd ../../AzureConsoleApp/
+git ac "other stuff"
+git push
+cd ../az_iac/ServiceBusQueueExercise/
+hx
+git ac "wow"
+cd ..
+mkdir AzureStorageQueueApp
+hx
+cd ..
+mkdir StorageQueueExercise
+cd StorageQueueExercise/
+go mod init StorageQueueExercise
+ls
+hx AzureConsoleApp/
+go get github.com/pulumi/pulumi-azure-native-sdk/resources/v2
+go get github.com/pulumi/pulumi/sdk/v3/go/pulumi
+pulumi new --force
+hx az_iac/
+cd az_iac/
+ls
+cd StorageQueueExercise/
+pulumi up
+pulumi down
+hx
+sleep
+i3-msg restart
+feh --bg-scale /usr/share/backgrounds/pop/nick-nazzaro-desert.png
+polybar --config=~/.config/polybar/toph/config.ini toph
+killall polybar
+polybar --config=~/.config/polybar/toph/config.ini toph
+i3-msg restart
+monitors
+blueman
+hx ~/.config/helix/config.toml
+hx ~/.config/i3/config
+cd git/
+ls
+hx AzureStorageQueueApp/
+hx az_iac/
+cd git/az_iac/StorageQueueExercise/
+ls
+hx ~/.config/starship.toml
+guh
+hx
+go get github.com/pulumi/pulumi-azure-native-sdk/authorization/v2
+pulumi run
+pulumi up
+o
+hx
+cd ../../
+ls
+config nu
+ls
+cd AzureStorageQueueApp/
+hx
+go mod init StorageQueueApp
+go get github.com/Azure/azure-sdk-for-go/sdk/azidentity
+go get github.com/Azure/azure-sdk-for-go/sdk/storage/azblob
+go get github.com/Azure/azure-sdk-for-go/sdk/storage/azqueue
+hx
+cd ../AzureConsoleApp/
+hx

@@ -1,58 +1,117 @@
-# config.nu
-# version = "0.102.0"
-
-# Define color theme
-let base00 = "#1c1c1c"
-let base01 = "#262626"
-let base02 = "#3a3a3a"
-let base03 = "#4e4e4e"
-let base04 = "#bcbcbc"
-let base05 = "#dcdcdc"
-let base06 = "#e4e4e4"
-let base07 = "#ffffff"
-let base08 = "#d75f5f"
-let base09 = "#ffaf5f"
-let base0a = "#ffd787"
-let base0b = "#87af87"
-let base0c = "#5fafaf"
-let base0d = "#87afd7"
-let base0e = "#af87af"
-let base0f = "#d7875f"
-
-let bearded_theme = {
-    separator: $base03
-    leading_trailing_space_bg: $base04
-    header: $base0b
-    date: $base0e
-    filesize: $base0d
-    row_index: $base0c
-    bool: $base08
-    int: $base0b
-    duration: $base08
-    range: $base08
-    float: $base08
-    string: $base04
-    nothing: $base08
-    binary: $base08
-    cellpath: $base08
-    hints: dark_gray
-    shape_garbage: { fg: "#FFFFFF" bg: "#FF0000" attr: b}
-    shape_bool: $base0d
-    shape_int: { fg: $base0e attr: b}
-    shape_float: { fg: $base0e attr: b}
-    shape_range: { fg: $base0a attr: b}
-    shape_internalcall: { fg: $base0c attr: b}
-    shape_external: $base0c
-    shape_externalarg: { fg: $base0b attr: b}
-    shape_literal: $base0d
-    shape_operator: $base0a
-    shape_signature: { fg: $base0b attr: b}
-    shape_string: $base0b
-    shape_filepath: $base0d
-    shape_globpattern: { fg: $base0d attr: b}
-    shape_variable: $base0e
-    shape_flag: { fg: $base0d attr: b}
-    shape_custom: {attr: b}
+# Catppuccin color themes
+let catppuccin = {
+  latte: {
+    rosewater: "#dc8a78"
+    flamingo: "#dd7878"
+    pink: "#ea76cb"
+    mauve: "#8839ef"
+    red: "#d20f39"
+    maroon: "#e64553"
+    peach: "#fe640b"
+    yellow: "#df8e1d"
+    green: "#40a02b"
+    teal: "#179299"
+    sky: "#04a5e5"
+    sapphire: "#209fb5"
+    blue: "#1e66f5"
+    lavender: "#7287fd"
+    text: "#4c4f69"
+    subtext1: "#5c5f77"
+    subtext0: "#6c6f85"
+    overlay2: "#7c7f93"
+    overlay1: "#8c8fa1"
+    overlay0: "#9ca0b0"
+    surface2: "#acb0be"
+    surface1: "#bcc0cc"
+    surface0: "#ccd0da"
+    crust: "#dce0e8"
+    mantle: "#e6e9ef"
+    base: "#eff1f5"
+  }
+  frappe: {
+    rosewater: "#f2d5cf"
+    flamingo: "#eebebe"
+    pink: "#f4b8e4"
+    mauve: "#ca9ee6"
+    red: "#e78284"
+    maroon: "#ea999c"
+    peach: "#ef9f76"
+    yellow: "#e5c890"
+    green: "#a6d189"
+    teal: "#81c8be"
+    sky: "#99d1db"
+    sapphire: "#85c1dc"
+    blue: "#8caaee"
+    lavender: "#babbf1"
+    text: "#c6d0f5"
+    subtext1: "#b5bfe2"
+    subtext0: "#a5adce"
+    overlay2: "#949cbb"
+    overlay1: "#838ba7"
+    overlay0: "#737994"
+    surface2: "#626880"
+    surface1: "#51576d"
+    surface0: "#414559"
+    base: "#303446"
+    mantle: "#292c3c"
+    crust: "#232634"
+  }
+  macchiato: {
+    rosewater: "#f4dbd6"
+    flamingo: "#f0c6c6"
+    pink: "#f5bde6"
+    mauve: "#c6a0f6"
+    red: "#ed8796"
+    maroon: "#ee99a0"
+    peach: "#f5a97f"
+    yellow: "#eed49f"
+    green: "#a6da95"
+    teal: "#8bd5ca"
+    sky: "#91d7e3"
+    sapphire: "#7dc4e4"
+    blue: "#8aadf4"
+    lavender: "#b7bdf8"
+    text: "#cad3f5"
+    subtext1: "#b8c0e0"
+    subtext0: "#a5adcb"
+    overlay2: "#939ab7"
+    overlay1: "#8087a2"
+    overlay0: "#6e738d"
+    surface2: "#5b6078"
+    surface1: "#494d64"
+    surface0: "#363a4f"
+    base: "#24273a"
+    mantle: "#1e2030"
+    crust: "#181926"
+  }
+  mocha: {
+    rosewater: "#f5e0dc"
+    flamingo: "#f2cdcd"
+    pink: "#f5c2e7"
+    mauve: "#cba6f7"
+    red: "#f38ba8"
+    maroon: "#eba0ac"
+    peach: "#fab387"
+    yellow: "#f9e2af"
+    green: "#a6e3a1"
+    teal: "#94e2d5"
+    sky: "#89dceb"
+    sapphire: "#74c7ec"
+    blue: "#89b4fa"
+    lavender: "#b4befe"
+    text: "#cdd6f4"
+    subtext1: "#bac2de"
+    subtext0: "#a6adc8"
+    overlay2: "#9399b2"
+    overlay1: "#7f849c"
+    overlay0: "#6c7086"
+    surface2: "#585b70"
+    surface1: "#45475a"
+    surface0: "#313244"
+    base: "#1e1e2e"
+    mantle: "#181825"
+    crust: "#11111b"
+  }
 }
 
 # Update PATH
@@ -68,38 +127,150 @@ $env.PATH = ($env.PATH | prepend [
   "/home/yoyomusho/.local/bin"
 ])
 
-# Basic configuration
-$env.config = {
-  show_banner: false
-  render_right_prompt_on_last_line: true
-  buffer_editor: "hx"
+# Set environment variables for editors
+$env.EDITOR = "hx"
+$env.VISUAL = "hx"
+
+# Set theme colors
+let stheme = $catppuccin.mocha
+let theme = {
+  separator: $stheme.overlay0
+  leading_trailing_space_bg: $stheme.overlay0
+  header: $stheme.green
+  date: $stheme.mauve
+  filesize: $stheme.blue
+  row_index: $stheme.pink
+  bool: $stheme.peach
+  int: $stheme.peach
+  duration: $stheme.peach
+  range: $stheme.peach
+  float: $stheme.peach
+  string: $stheme.green
+  nothing: $stheme.peach
+  binary: $stheme.peach
+  cellpath: $stheme.peach
+  hints: dark_gray
+
+  shape_garbage: { fg: $stheme.crust bg: $stheme.red attr: b }
+  shape_bool: $stheme.blue
+  shape_int: { fg: $stheme.mauve attr: b}
+  shape_float: { fg: $stheme.mauve attr: b}
+  shape_range: { fg: $stheme.yellow attr: b}
+  shape_internalcall: { fg: $stheme.blue attr: b}
+  shape_external: { fg: $stheme.blue attr: b}
+  shape_externalarg: $stheme.text 
+  shape_literal: $stheme.blue
+  shape_operator: $stheme.yellow
+  shape_signature: { fg: $stheme.green attr: b}
+  shape_string: $stheme.green
+  shape_filepath: $stheme.yellow
+  shape_globpattern: { fg: $stheme.blue attr: b}
+  shape_variable: $stheme.text
+  shape_flag: { fg: $stheme.blue attr: b}
+  shape_custom: {attr: b}
 }
 
-# Set up Starship prompt
-$env.PROMPT_COMMAND = { |span_duration| starship prompt --cmd-duration $span_duration }
+# Detect OS
+let is_windows = ($nu.os-info.name | str contains "Windows")
+let is_linux = ($nu.os-info.name | str contains "Linux")
 
-# Other environment variables
-$env.TERM = "wezterm"
+# Main configuration
+$env.config = {
+  show_banner: false
+  cursor_shape: {
+    vi_normal: block
+    vi_insert: line
+  }
+  edit_mode: vi
+  render_right_prompt_on_last_line: true
+  buffer_editor: "hx"  # Set Helix as the buffer editor
+  rm: {
+    always_trash: true
+  }
+  color_config: $theme
+  keybindings: [
+    {
+      name: completion_menu
+      modifier: none
+      keycode: tab
+      mode: [vi_normal, vi_insert]
+      event: {
+        until: [
+          { send: menu name: completion_menu }
+          { send: menunext }
+        ]
+      }
+    }
+    {
+      name: completion_previous
+      modifier: shift
+      keycode: backtab
+      mode: [vi_normal, vi_insert]
+      event: { send: menuprevious }
+    }
+    {
+      name: jump_to_start
+      keycode: char_h
+      modifier: shift
+      mode: [vi_normal] 
+      event: { edit: MoveToLineStart }
+    }
+    {
+      name: jump_to_end
+      modifier: shift
+      keycode: char_l
+      mode: [vi_normal] 
+      event: { edit: MoveToLineEnd }
+    }
+  ]
+  completions: {
+    algorithm: "fuzzy",
+  }
+  history: {
+    max_size: 100_000
+    sync_on_enter: true
+    file_format: "sqlite"
+    isolation: false
+  }
+  hooks: {
+    pre_prompt: [{ ||
+      if (which direnv | length) > 0 {
+        let direnv = (do -i { direnv export json | from json })
+        let direnv = if ($direnv | table | length) == 1 { $direnv } else { {} }
+        $direnv | load-env
+      }
+    }]
+    pre_execution: [{ || }]
+  }
+}
+
+# Prompt configuration
+$env.PROMPT_COMMAND = { |span_duration| 
+  if (which starship | length) > 0 {
+    starship prompt --cmd-duration $span_duration
+  } else {
+    $"($env.PWD)> "
+  }
+}
+
 $env.ENV = "dev"
 
-# Create directory for autoload scripts
-mkdir ($nu.data-dir | path join "vendor/autoload")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+# Starship initialization
+if (which starship | length) > 0 {
+  do -i { starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu") }
+}
 
-# Define aliases
-alias zen = /opt/zen/zen
-alias sleep = systemctl suspend
-alias monitors = ~/.screenlayout/monitors.sh
+# Aliases
+alias zen = if $is_linux { /opt/zen/zen } else { echo "zen command not available on Windows" }
+alias sleep = if $is_linux { systemctl suspend } else { echo "Use Windows sleep functionality" }
+alias monitors = if $is_linux { ~/.screenlayout/monitors.sh } else { echo "Use Windows display settings" }
 alias python = python3
-alias volume = pavucontrol
-alias whatsapp = flatpak run io.github.mimbrero.WhatsAppDesktop
-alias o = bash -c "/home/yoyomusho/apps/Obsidian-1.8.9.AppImage &"
-alias blueman = bash -c "blueman-manager &"
+alias volume = if $is_linux { pavucontrol } else { echo "Use Windows volume mixer" }
+alias whatsapp = if $is_linux { flatpak run io.github.mimbrero.WhatsAppDesktop } else { echo "Use WhatsApp from Microsoft Store" }
+alias o = if $is_linux { bash -c "/home/yoyomusho/apps/Obsidian-1.8.9.AppImage &" } else { start obsidian:// }
+alias blueman = if $is_linux { bash -c "blueman-manager &" } else { echo "Use Windows Bluetooth settings" }
 
-# Load Cargo environment
-source "~/.cargo/env.nu"
-
-# Configure appearance and behavior
-# These need to be set differently in Nushell 0.102.0
-# You may need to check the current documentation for the correct way to set these
-# or use the `config` command to modify them interactively
+# Source cargo environment if available
+if ($is_linux and (do -i { ls -a "~/.cargo/env.nu" } | length) > 0) {
+  source "~/.cargo/env.nu"
+}

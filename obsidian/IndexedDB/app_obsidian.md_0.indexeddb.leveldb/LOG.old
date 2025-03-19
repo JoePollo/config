@@ -1,2 +1,6 @@
-2025/03/13-16:05:05.298 11c9a Creating DB /home/yoyomusho/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb since it was missing.
-2025/03/13-16:05:05.309 11c9a Reusing MANIFEST /home/yoyomusho/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/16-14:08:14.983 23c6e Reusing MANIFEST /home/yoyomusho/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/16-14:08:14.983 23c6e Recovering log #3
+2025/03/16-14:08:14.984 23c6e Reusing old log /home/yoyomusho/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000003.log 
+2025/03/16-15:23:16.817 23c6f Level-0 table #5: started
+2025/03/16-15:23:16.846 23c6f Level-0 table #5: 1304841 bytes OK
+2025/03/16-15:23:16.848 23c6f Delete type=0 #3
