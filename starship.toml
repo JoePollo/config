@@ -7,17 +7,33 @@ palette = "catppuccin_macchiato"
 
 # Starship modules
 [character]
-# Note the use of Catppuccin color 'peach'
+disabled = false
+vimcmd_replace_one_symbol = '[](red) ❯](peach)'
+vimcmd_replace_symbol = '[](red) ❯](peach)'
+vimcmd_visual_symbol = '[](red) ❯](peach)'
 success_symbol = "[[󰄛](green) ❯](peach)"
 error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
+vimcmd_symbol = "[󰄛 ❮](subtext1)"
 
 [git_branch]
 style = "bold mauve"
 
 [directory]
-truncation_length = 4
+truncation_length = 3
+truncation_symbol = "…/"
 style = "bold lavender"
+
+[line_break]
+disabled = false
+
+[username]
+show_always = true
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_bg1"
+format = '[[  $time ](fg:peach)]($style)'
 
 # Palette definitions
 [palettes.catppuccin_latte]
