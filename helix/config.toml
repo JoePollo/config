@@ -10,15 +10,19 @@ cursorline = true
 mouse = false
 color-modes = true
 end-of-line-diagnostics = "hint"
-auto-save = true
 # rulers = [80, 120]
 cursorcolumn = true
 bufferline = "always"
 
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 3000
+
 # Cursor Configuration
 [editor.cursor-shape]
 insert = "bar"
-normal = "block"
+normal = "underline"
 select = "underline"
 
 # Text Wrapping
@@ -67,8 +71,13 @@ display-inlay-hints = true
 # hidden = false
 git-ignore = false
 
+[editor.smart-tab]
+supersede-menu = true
+
 # Keybindings - Normal Mode
 [keys.normal]
+j = "move_visual_line_up"
+k = "move_visual_line_down"
 ins = "insert_mode"
 esc = ["collapse_selection", "keep_primary_selection"]
 C-o = ":open ~/.config/helix/config.toml"
@@ -87,6 +96,8 @@ C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befor
 S-A-down = ["normal_mode", "extend_to_line_bounds", "yank", "open_below", "replace_with_yanked", "collapse_selection"]
 S-A-up = ["normal_mode", "extend_to_line_bounds", "yank", "open_above", "replace_with_yanked", "collapse_selection"]
 space."." = "file_picker_in_current_buffer_directory"
+C-p = ":clipboard-paste-replace"
+A-q = "insert_newline"
 
 # Keybindings - Insert Mode
 [keys.insert]
