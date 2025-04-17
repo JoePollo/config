@@ -1,4 +1,12 @@
-# Catppuccin color themes
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+$env.config.buffer_editor = "hx.exe"
+$env.ENV = "dev"
+$env.TF_VAR_ENV = $env.ENV
+$env.run_time = "local"
+alias o = ~/scoop/apps/obsidian/current/Obsidian.exe
+alias tf = terraform
+
 let catppuccin = {
   latte: {
     rosewater: "#dc8a78"
@@ -114,24 +122,7 @@ let catppuccin = {
   }
 }
 
-# Update PATH
-$env.PATH = ($env.PATH | prepend [
-  "~/.linuxbrew/bin"
-  "/home/linuxbrew/.linuxbrew/bin"
-  "/home/linuxbrew/.linuxbrew/sbin"
-  "/usr/local/go/bin"
-  "~/go/bin"
-  "/opt/"
-  "~/.cargo/bin"
-  "~/.bun/bin"
-  "/home/yoyomusho/.local/bin"
-])
 
-# Set environment variables for editors
-$env.EDITOR = "hx"
-$env.VISUAL = "hx"
-
-# Set theme colors
 let stheme = $catppuccin.mocha
 let theme = {
   separator: $stheme.overlay0
@@ -183,7 +174,7 @@ $env.config = {
   }
   edit_mode: vi
   render_right_prompt_on_last_line: true
-  buffer_editor: "hx"  # Set Helix as the buffer editor
+  buffer_editor: "hx"
   rm: {
     always_trash: true
   }
@@ -251,26 +242,4 @@ $env.PROMPT_COMMAND = { |span_duration|
   } else {
     $"($env.PWD)> "
   }
-}
-
-$env.ENV = "dev"
-
-# Starship initialization
-if (which starship | length) > 0 {
-  do -i { starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu") }
-}
-
-# Aliases
-alias zen = if $is_linux { /opt/zen/zen } else { echo "zen command not available on Windows" }
-alias sleep = if $is_linux { systemctl suspend } else { echo "Use Windows sleep functionality" }
-alias monitors = if $is_linux { ~/.screenlayout/monitors.sh } else { echo "Use Windows display settings" }
-alias python = python3
-alias volume = if $is_linux { pavucontrol } else { echo "Use Windows volume mixer" }
-alias whatsapp = if $is_linux { flatpak run io.github.mimbrero.WhatsAppDesktop } else { echo "Use WhatsApp from Microsoft Store" }
-alias o = if $is_linux { bash -c "/home/yoyomusho/apps/Obsidian-1.8.9.AppImage &" } else { start obsidian:// }
-alias blueman = if $is_linux { bash -c "blueman-manager &" } else { echo "Use Windows Bluetooth settings" }
-
-# Source cargo environment if available
-if ($is_linux and (do -i { ls -a "~/.cargo/env.nu" } | length) > 0) {
-  source "~/.cargo/env.nu"
 }
