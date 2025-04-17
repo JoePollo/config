@@ -20,6 +20,7 @@ file-types = ["json"]
 
 [[language]]
 name = "markdown"
+language-servers = ["marksman", "harper-ls"]
 auto-format = true
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md", "-c", "~/git/dprint.json"]}
 file-types = ["md"]
@@ -40,7 +41,7 @@ args = [
 ]
 
 [language-server.pyright]
-# command = "pyright-langserver"
+command = "pyright-langserver"
 args = ["--stdio"]
 
 [language-server.pyright.config]
@@ -63,28 +64,19 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "ts", "-c", "~git/dp
 file-types = ["tsx", "ts"]
 
 [[language]]
-name = "rust"
+name = "sql"
 auto-format = true
+formatter = { command = "sqlfluff", args = ["fix"]}
+file-types = ["sql"]
 
-roots = [
-  "Cargo.toml",
-  "Cargo.lock"
-]
-
-[language.auto-pairs]
-'(' = ')'
-'{' = '}'
-'[' = ']'
-'"' = '"'
-'`' = '`'
-
-[language-server.rust-analyzer]
-command = "rust-analyzer"
-
-[language-server.rust-analyzer.config]
-inlayHints.bindingModeHints.enable = false
-inlayHints.closingBraceHints.minLines = 10
-inlayHints.closureReturnTypeHints.enable = "with_block"
-inlayHints.discriminantHints.enable = "fieldless"
-inlayHints.lifetimeElisionHints.enable = "skip_trivial"
-inlayHints.typeHints.hideClosureInitialization = false
+[[language]]
+name = "hcl"
+scope = "source.hcl"
+injection-regex = "(hcl|tf|nomad)"
+language-id = "terraform"
+file-types = ["hcl", "tf", "nomad", "tfvars"]
+comment-token = "#"
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "terraform-ls" ]
+auto-format = true
