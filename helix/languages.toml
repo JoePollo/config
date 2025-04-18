@@ -1,4 +1,9 @@
 [[language]]
+name = "rust"
+auto-format = true
+formatter = { command = "cargo fmt" }
+
+[[language]]
 name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
@@ -28,7 +33,6 @@ file-types = ["md"]
 [[language]]
 name = "python"
 auto-format = true
-# diagnostic-severity="warning"
 language-servers = ["pyright","ruff"]
 indent = { tab-width = 4, unit = "    " }
 
@@ -80,3 +84,4 @@ block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
 language-servers = [ "terraform-ls" ]
 auto-format = true
+
